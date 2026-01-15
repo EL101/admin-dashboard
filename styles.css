@@ -133,25 +133,61 @@ img[class="profile-icon"] {
     display: grid;
     grid-template: 1fr 1fr / 4fr 1fr;
     padding: 2rem 1rem;
+    gap: 1.3rem;
 }
 
 .projects {
-    --entry-width: 250px;
-    --entry-height: 160px;
+    --entry-width: 225px;
+    --entry-height: 175px;
     grid-row: 1 / -1;
 }
 
 .project-entry-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--entry-width), 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
 }
 
 .project-entry {
-    width: var(--entry-width);
+    /* width: var(--entry-width); */
     height: var(--entry-height);
     background-color: white;
+    border-radius: 7px;
+    display: flex;
+    gap: 1.3rem;
 }
+
+.color-tab {
+    background-color: rgb(19, 193, 228);
+    height: 100%;
+    width: 7px;
+    border-radius: 7px 0 0 7px;
+}
+
+.project-entry-content {
+    margin: 2rem 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.project-entry-content > div:last-child {
+    align-self: flex-end;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.project-entry-content > div:last-child > img {
+    width: 1.3rem;
+}
+
+.project-entry-content > div:first-child > p {
+    font-size: 0.7rem;
+    margin-top: 3px;
+    color: rgba(95, 95, 95, 0.813);
+}
+
 .dashboard > div > h2 {
     font-size: 1rem;
     font-weight: 600;
