@@ -53,20 +53,25 @@ body {
 
 .header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.312);
-    padding: 10px 30px 20px 30px;
+    padding: 10px 70px 20px 30px;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
 }
 
-.header-top {
+.header-top,
+.header-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-top {
     font-size: 1.2rem;
 }
 
-.header-top * {
+.header-top *,
+.header-bottom * {
     font-size: inherit;
 }
 
@@ -97,4 +102,28 @@ input[type="search"] {
 
 img[class="profile-icon"] {
     width: 3em;
+}
+
+.header-bottom {
+    font-size: 1.5rem;
+}
+.intro > div:first-child {
+    font-size: 0.5em;
+    margin-bottom: 3px;
+}
+.intro > div:last-child {
+    font-size: 0.8em;
+}
+.header-button {
+    font-size: 0.7em;
+    padding: 0.4em 1.2em;
+    border-radius: 6em;
+    border: none;
+    background-color: rgb(50, 163, 255);
+    color: white;
+    font-weight: 570;
+}
+
+.header-bottom > .right {
+    gap: 1.5rem;
 }
