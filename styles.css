@@ -52,7 +52,7 @@ body {
 }
 
 .header {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.312);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.312);
     padding: 10px 70px 20px 30px;
     display: flex;
     flex-direction: column;
@@ -126,4 +126,34 @@ img[class="profile-icon"] {
 
 .header-bottom > .right {
     gap: 1.5rem;
+}
+
+.dashboard {
+    background-color: rgba(175, 181, 196, 0.353);
+    display: grid;
+    grid-template: 1fr 1fr / 4fr 1fr;
+    padding: 2rem 1rem;
+}
+
+.projects {
+    --entry-width: 250px;
+    --entry-height: 160px;
+    grid-row: 1 / -1;
+}
+
+.project-entry-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--entry-width), 1fr));
+    gap: 1.5rem;
+}
+
+.project-entry {
+    width: var(--entry-width);
+    height: var(--entry-height);
+    background-color: white;
+}
+.dashboard > div > h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
 }
