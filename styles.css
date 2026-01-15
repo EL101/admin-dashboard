@@ -11,17 +11,19 @@ html, body {
 
 body {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 6fr / 1fr 4fr;
+    font-family: Helvetica, sans-serif;
 }
 
 .sidebar {
-    background-color: rgb(26, 56, 207);
+    background-color: rgb(45, 71, 202);
     grid-row: 1 / -1;
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 3em;
+    font-weight: 600;
 }
 
 .sidebar-header {
@@ -48,6 +50,51 @@ body {
 .sidebar-header > img {
     width: 1.5em;
 }
+
 .header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.312);
+    padding: 10px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.header-top * {
+    font-size: inherit;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="search"] {
+    width: 40vw;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.378);
+    border-radius: 15px;
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+.header-top img {
+    width: 1.3em;
+}
+
+img[class="profile-icon"] {
+    width: 3em;
 }
