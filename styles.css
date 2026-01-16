@@ -11,7 +11,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template: 1fr 6fr / 1fr 4fr;
+    grid-template: 1fr 6fr / 1fr 5fr;
     font-family: Helvetica, sans-serif;
 }
 
@@ -132,17 +132,18 @@ img[class="profile-icon"] {
     background-color: rgba(175, 181, 196, 0.353);
     display: grid;
     grid-template: 1fr 1fr / 4fr 1fr;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem 4rem 1rem;
     gap: 1.3rem;
 }
 
 .projects {
-    --entry-width: 225px;
-    --entry-height: 175px;
     grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-entry-container {
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
@@ -157,14 +158,12 @@ img[class="profile-icon"] {
 }
 
 .project-entry {
-    /* width: var(--entry-width); */
-    height: var(--entry-height);
     display: flex;
     gap: 1.3rem;
 }
 
 .color-tab {
-    background-color: rgb(19, 193, 228);
+    background-color: rgb(235, 81, 47);
     height: 100%;
     width: 7px;
     border-radius: 7px 0 0 7px;
@@ -175,7 +174,7 @@ img[class="profile-icon"] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    flex-grow: 1; 
 }
 
 .project-entry-content > div:last-child {
@@ -201,8 +200,10 @@ img[class="profile-icon"] {
 }
 
 .announcement-container {
-    --font-color: rgba(95, 95, 95, 0.735);
-    padding: 2rem 1.5rem;
+    --font-color: rgba(95, 95, 95, 0.657);
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    height: 275px;
+    overflow-y: auto;
 }
 
 .announcement-entry {
@@ -221,4 +222,29 @@ img[class="profile-icon"] {
 .announcement-entry:not(:last-child) {
     border-bottom: 1px solid var(--font-color);
     margin-bottom: 1rem;
+}
+
+.trending {
+    align-self: end;
+}
+.trending-container {
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template: repeat(4, 1fr);
+    font-size: 0.8rem;
+    gap: 0.8em;
+    justify-content: space-between;
+}
+
+.trending-entry {
+    display: flex;
+    gap: 0.7em;
+    align-items: center;
+}
+
+.trending-entry > img {
+    width: 3.8em;
+}
+.trending-entry > div > div:not(.username) {
+    color: rgba(95, 95, 95, 0.657);
 }
