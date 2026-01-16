@@ -163,6 +163,7 @@ img[class="profile-icon"] {
 }
 
 .color-tab {
+    flex: 0 0 auto;
     background-color: rgb(235, 81, 47);
     height: 100%;
     width: 7px;
