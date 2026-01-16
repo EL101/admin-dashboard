@@ -25,7 +25,9 @@ body {
     gap: 3em;
     font-weight: 600;
 }
-
+.sidebar img[src$=".svg"] {
+    filter: invert(1);
+}
 .sidebar-header {
     font-size: 1.3rem;
 }
