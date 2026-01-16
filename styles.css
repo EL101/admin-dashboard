@@ -148,11 +148,17 @@ img[class="profile-icon"] {
     gap: 1.5rem;
 }
 
+.project-entry,
+.announcement-container,
+.trending-container {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px rgba(128, 128, 128, 0.364);
+}
+
 .project-entry {
     /* width: var(--entry-width); */
     height: var(--entry-height);
-    background-color: white;
-    border-radius: 7px;
     display: flex;
     gap: 1.3rem;
 }
@@ -183,7 +189,7 @@ img[class="profile-icon"] {
 }
 
 .project-entry-content > div:first-child > p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: 3px;
     color: rgba(95, 95, 95, 0.813);
 }
@@ -192,4 +198,27 @@ img[class="profile-icon"] {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
+}
+
+.announcement-container {
+    --font-color: rgba(95, 95, 95, 0.735);
+    padding: 2rem 1.5rem;
+}
+
+.announcement-entry {
+    padding: 0 0.3rem 1rem 0.3rem;
+}
+.announcement-entry > h4 {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+
+.announcement-entry > p {
+    font-size: 0.7rem;
+    color: var(--font-color);
+}
+
+.announcement-entry:not(:last-child) {
+    border-bottom: 1px solid var(--font-color);
+    margin-bottom: 1rem;
 }
