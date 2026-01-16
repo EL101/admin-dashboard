@@ -118,6 +118,20 @@ img[class="profile-icon"] {
     width: 3em;
 }
 
+img[src*="bell"] {
+    box-sizing: content-box;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+img[src*="bell"]:hover {
+    background-color: rgba(128, 128, 128, 0.321);
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.321);
+}
+
+img[src*="bell"]:active {
+    background-color: rgba(128, 128, 128, 0.549);
+}
 .header-bottom {
     font-size: 1.5rem;
 }
