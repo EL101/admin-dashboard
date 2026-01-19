@@ -66,13 +66,11 @@ body {
 }
 
 .sidebar-entry {
-    position: relative;
-    left: 0;
-    transition: left 0.2s;
+    transition: transform 0.2s;
 }
 .sidebar-entry:hover {
     cursor: pointer;
-    left: -4px;
+    transform: translate(-4px, 0);
 }
 
 .header {
@@ -161,13 +159,12 @@ img[src*="bell"]:active {
     background-color: rgb(50, 163, 255);
     color: white;
     font-weight: 570;
+    transition: transform 0.2s;
 }
 
 .header-button:hover {
     cursor: pointer;
-    position: relative;
-    top: -2px;
-    left: -1px;
+    transform: translate(-1px, -2px);
     box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.48);
 }
 
@@ -236,6 +233,12 @@ img[src*="bell"]:active {
 
 .project-entry-content > div:last-child > img {
     width: 1.3rem;
+    transition: transform 0.2s;
+}
+
+.project-entry-content > div:last-child > img:hover {
+    cursor: pointer;
+    transform: translate(0, -2px);
 }
 
 .project-entry-content > div:first-child > p {
