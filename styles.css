@@ -247,6 +247,22 @@ img[src*="bell"]:active {
     color: rgba(95, 95, 95, 0.813);
 }
 
+.project-entry-content > div:first-child a,
+.project-entry-content > div:first-child a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.project-entry-content > div:first-child > h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+img[src$="link.svg"] {
+    width: 1.2rem;
+}
+
 .dashboard > div > h2 {
     font-size: 1rem;
     font-weight: 600;
