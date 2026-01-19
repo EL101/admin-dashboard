@@ -65,6 +65,16 @@ body {
     width: var(--sidebar-header-img-size);
 }
 
+.sidebar-entry {
+    position: relative;
+    left: 0;
+    transition: left 0.2s;
+}
+.sidebar-entry:hover {
+    cursor: pointer;
+    left: -4px;
+}
+
 .header {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.312);
     padding: 10px 70px 20px 30px;
